@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    compileSdk 36
+    compileSdk 35
 
     defaultConfig {
         applicationId "com.isslam.husonkids"
         namespace "com.isslam.husonkids"
         minSdk 21
-        targetSdk 36
+        targetSdk 35
         versionCode 1
         versionName "1.0"
     }

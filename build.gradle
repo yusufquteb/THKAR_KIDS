@@ -1,5 +1,5 @@
 // Top-level build file — do not place application dependencies here.
 // Use the plugins block in app/build.gradle instead.
 plugins {
-    id 'com.android.application' version '8.7.3' apply false
+    id 'com.android.application' version '8.5.2' apply false
 }
