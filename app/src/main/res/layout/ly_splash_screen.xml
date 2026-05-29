@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ly_main_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg">
+
+    <!-- Center logo area -->
+    <FrameLayout
+        android:id="@+id/ly_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/ly_strip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/contentbg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/asdbg" />
+
+        <ImageView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/asdenter" />
+    </FrameLayout>
+
+    <!-- App name strip -->
+    <RelativeLayout
+        android:id="@+id/ly_strip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CC1B6B3A"
+        android:gravity="center_vertical"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_actions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ly_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="أذكار الطفل المسلم"
+                android:textAppearance="?attr/textAppearanceHeadlineSmall"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="Logo"
+                android:src="@drawable/ic_launcher" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_slogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="طريقة حياة"
+                android:textAppearance="?attr/textAppearanceHeadlineSmall"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="الاسلام"
+                android:textAppearance="?attr/textAppearanceHeadlineSmall"
+                android:textColor="@color/secondary" />
+
+            <ImageView
+                android:id="@+id/ImageView02"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="Logo"
+                android:src="@drawable/library_icon" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Bottom action buttons -->
+    <LinearLayout
+        android:id="@+id/bottom_actions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="24dp"
+        android:paddingTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.isslam.husonkids.FloatingActionButton
+            android:id="@+id/btn_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            fab:fab_icon="@drawable/ic_action_view_as_grid"
+            fab:fab_colorNormal="@color/mag"
+            fab:fab_colorPressed="@color/mag_pressed" />
+
+        <com.isslam.husonkids.FloatingActionButton
+            android:id="@+id/btn_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_icon="@drawable/ic_action_important"
+            fab:fab_colorNormal="@color/orange"
+            fab:fab_colorPressed="@color/orange_pressed" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
