@@ -1,6 +1,6 @@
 package com.isslam.husonkids;
 
-import android.app.Activity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.SpannableStringBuilder;
@@ -12,7 +12,7 @@ import android.widget.TextView;
 import java.util.HashMap;
 import java.util.Map;
 
-public class DebugActivity extends Activity {
+public class DebugActivity extends AppCompatActivity {
 
     private static final Map<String, String> exceptionMap = new HashMap<String, String>() {{
         put("StringIndexOutOfBoundsException", "Invalid string operation\n");
